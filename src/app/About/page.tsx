@@ -2,13 +2,13 @@ export default function About() {
   return (
     <div>
       <h2 className="text-center">ABOUT PAGE</h2>
-      <h3 className="text-center" >"Neque porro quisquam est qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit..."</h3>
-      <h4 className="text-center">"There is no one who loves pain itself,
-        who seeks after it and wants to have it, simply because it is pain..."
+      <h3 className="text-center" >Neque porro quisquam est qui dolorem ipsum
+        quia dolor sit amet, consectetur, adipisci velit...</h3>
+      <h4 className="text-center">There is no one who loves pain itself,
+        who seeks after it and wants to have it, simply because it is pain...
       </h4>
       <h1 className="text-center underline">ABOUT STUDIES</h1>
-      <p className="line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
+      <p className="text-justify line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
         nibh ultrices, laoreet felis sit amet, vehicula arcu. Quisque sem nisi,
         porta ut tortor eu, cursus sagittis nibh. Curabitur scelerisque mauris
         nec tellus imperdiet molestie. Suspendisse potenti. Praesent tristique

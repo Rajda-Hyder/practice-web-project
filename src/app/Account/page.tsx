@@ -1,17 +1,23 @@
 import Link from "next/link"
+
+interface User {
+    id: number;
+    name: string;
+  }
+  
 export default async function Account() {
     const fetchdata = await fetch("https://jsonplaceholder.typicode.com/users")
-    const res = await fetchdata.json()
-    console.log(res)
+    const User = await fetchdata.json()
+
  return (
         <div>
             <h2 className="text-center">ACCOUNT PAGE</h2>
             <h2><Link href="/Account/accountDetail">ACCOUNT DETAIL</Link></h2>
             <ol>
             { 
-         res.map((item:any,i:number)=>{
+         User.map((item:User,i:number)=>{
             return(
-                <li><Link href={`/Account/${item.id}`} >{item.name}</Link></li>
+                <div key={i}><Link href={`/Account/${item.id}`} >{item.name}</Link></div>
             )
          })}
         
